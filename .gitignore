@@ -1,4 +1,5 @@
 .idea
 venv/
-geckodriver.log
+*.log
 __pycache__/
+*.csv
