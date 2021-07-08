@@ -3,6 +3,9 @@
 This is an example web scraping project. It will scrape data from a given webpage and log
 it for analysis.
 
+Uses logging package that comes with python to log messages. Logger created in caller file and is reused for logging in other py files.
+Logging documentation: https://docs.python.org/3/howto/logging.html
+
 
 Requirements:
 
@@ -19,6 +22,11 @@ Chrome: https://chromedriver.chromium.org/downloads
 Follow this youtube video to set your binary path for the WebDriver. This is for Chrome but 
 the same thing can be done for the Firefox geckodriver:
 https://www.youtube.com/watch?v=qeddFX5HXis
+
+Webscraping with Beautiful Soup:
+
+https://realpython.com/beautiful-soup-web-scraper-python/
+https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
 
 
 Will also need to run 
