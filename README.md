@@ -19,7 +19,7 @@ Firefox: https://github.com/mozilla/geckodriver/releases
 
 Chrome: https://chromedriver.chromium.org/downloads
 
-Follow this youtube video to set your binary path for the WebDriver. This is for Chrome but 
+Follow this youtube video to set your binary path for the WebDriver. This is for the Chrome chromedriver but 
 the same thing can be done for the Firefox geckodriver:
 https://www.youtube.com/watch?v=qeddFX5HXis
 
