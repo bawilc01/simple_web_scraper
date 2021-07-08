@@ -40,7 +40,7 @@ def openChrome(logger):
     logger.info(f'Chrome opened python.org successfully.')
 
 
-def main(logger):
+def runner(logger):
     try:
         logger.info(f'Opening Firefox page...')
         openFirefox(logger)

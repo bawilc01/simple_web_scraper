@@ -9,19 +9,14 @@ import logging
 # the function, like a logger.info
 
 def main(logger):
-    logger.info(f'------------------------------------process with caller started--------------------------------------')
-
-    import bc_web_scraper
 
     try:
+        import bc_web_scraper
         logger.info(f'Running webscraper py file main function.')
-        bc_web_scraper.main(logger)
+        bc_web_scraper.runner(logger)
     except Exception as e:
         logger.error(f'Error running main function in webscraper py file.')
         raise e
-
-    logger.info(f'------------------------------------process with caller ended--------------------------------------')
-
 
 if __name__ == '__main__':
     # setting up custom loggin in the console
@@ -29,9 +24,14 @@ if __name__ == '__main__':
     logger = logging.getLogger(f'Webscraper Logger')
     logger.setLevel(logging.DEBUG)
     logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
-    # formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    # formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s: - %(message)s')
     strhndlr = logging.StreamHandler()
     # strhndlr.setFormatter(formatter)
     logger.addHandler(strhndlr)
 
+    logger.info(
+        f'------------------------------------process with caller started--------------------------------------')
+
     main(logger)
+
+    logger.info(f'------------------------------------process with caller ended--------------------------------------')
