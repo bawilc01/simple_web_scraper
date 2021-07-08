@@ -83,13 +83,10 @@ def openFirefox(logger):
     jobs = soup.find_all('section', attrs={'class': 'main-content with-right-sidebar', 'role': 'main'})
     # logger.info(jobs.prettify())  # jobs in html on python.org/jobs to be parsed and scraped
     for job in jobs:
-        company_element = job.find("span", class_= "listing-company-name")
-        company_element.text.strip()
-        location_element = job.find("span", class_= "listing-location", )
-        location_element.text.strip()
+        company_element = job.find('a')
+        location_element = job.find('span', attrs={'class': 'listing-location'})
 
-
-        logger.info(f'\nCompany: {company_element}, \nLocation: {location_element}')
+        logger.info(f'\nJob Title: {company_element.text.strip()}, \nLocation: {location_element.text.strip()}')
 
     logger.info(f'Closing firefox.')
     f_driver.quit()
