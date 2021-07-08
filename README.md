@@ -13,7 +13,10 @@ Install python 3.9 or higher.
 Install pip for python: _python get-pip.py_ in the terminal.
 If pip is already installed, check that pip is up to date with:  _pip install --upgrade pip_
 
-Download the executtable for your machine and update the binary path for each browser:
+Check your browser version and then go to these sites to download the webdriver
+for your browser version. Download the executable for your machine and update the binary path for each 
+browser. I am on Chrome version 91, for example, so I need the chromedriver exe
+that works for Chrome version 91:
 
 Firefox: https://github.com/mozilla/geckodriver/releases
 
