@@ -34,6 +34,8 @@ f_driver = webdriver.firefox.webdriver.WebDriver(executable_path=config['Firefox
 
 
 def main():
+
+    # open a firefox browser and go to python.org
     f_driver.get("http://www.python.org")
     assert "Python" in f_driver.title  # todo - update this to used chromedriver-py
 
@@ -46,9 +48,6 @@ def main():
     prices = []  # List to store price of the product
 
     # the URL we want selenium webdriver to get for us
-
-    f_driver.get("https://www.newegg.com/Laptops-Notebooks/Category/ID-223?Tpk=laptops")
-
 
 if __name__ == '__main__':
     main()

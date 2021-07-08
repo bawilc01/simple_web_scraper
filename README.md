@@ -1,7 +1,7 @@
 # Web Scraping Example
 
-This is an example web scraping project. What it is doing is going to newegg.com for laptops and recording names and prices of available laptops.
-The information gathered will be written to a file.
+This is an example web scraping project. It will scrape data from a given webpage and log
+it for analysis.
 
 
 Requirements:
