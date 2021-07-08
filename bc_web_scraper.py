@@ -46,14 +46,21 @@ def main(logger):
         openFirefox(logger)
         logger.info(f'Opening Firefox complete.')
 
+    except Exception as e:
+        logger.error(f'Issue opening python.org in firefox browser.')
+        logger.error(f'Please see exception raised: \n{e}')  # will write exception and stack in log on new line
+        raise e  # raise exception to stop program
+
+    try:
         logger.info(f'Opening Chrome page...')
         openChrome(logger)
         logger.info(f'Opening Chrome complete.')
 
     except Exception as e:
-        logger.error(f'Issue opening python.org in browser.')
+        logger.error(f'Issue opening python.org in chrome browser.')
         logger.error(f'Please see exception raised: \n{e}')  # will write exception and stack in log on new line
         raise e  # raise exception to stop program
+
 
 # web scraping
 products = []  # List to store scrapped data later
