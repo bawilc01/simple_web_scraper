@@ -28,9 +28,10 @@ if __name__ == '__main__':
 
     logger = logging.getLogger(f'Webscraper Logger')
     logger.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%m/%d/%Y %I:%M:%S %p')
+    #formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
     strhndlr = logging.StreamHandler()
-    strhndlr.setFormatter(formatter)
+    #strhndlr.setFormatter(formatter)
     logger.addHandler(strhndlr)
 
     main(logger)
