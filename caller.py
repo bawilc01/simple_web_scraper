@@ -9,8 +9,7 @@ import logging
 # the function, like a logger.info
 
 def main(logger):
-    logger.info(
-        f'------------------------------------process with caller started--------------------------------------')
+    logger.info(f'------------------------------------process with caller started--------------------------------------')
 
     import bc_web_scraper
 

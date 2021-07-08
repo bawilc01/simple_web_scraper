@@ -34,3 +34,13 @@ https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
 
 Will also need to run 
 _pip install -r requirements.txt_ in the terminal to install the packages used in the project. 
+
+To run:
+
+In IDE: 
+Run caller.py file and watch console and browsers open and do their thing.
+
+In terminal/cmd:
+CD into the folder where caller file/webscraper file is at. 
+Run command python3 caller.py and watch logs written to terminal and browsers open.
+
