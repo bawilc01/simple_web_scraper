@@ -1,5 +1,5 @@
 """
-# Data to scrape - data from python.org
+# Data to scrape - jobs data from python.org
 """
 # import statements
 from selenium import webdriver  # automation package; this will open our web browser for us
