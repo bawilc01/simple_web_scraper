@@ -40,5 +40,5 @@ def main(logger):
         # the URL we want selenium webdriver to get for us
     except Exception as e:
         logger.error(f'Issue opening python.org in firefox browser.')
-        logger.error(f'Please see exception raised: \n{e}')  # will write exception in log on new line
+        logger.error(f'Please see exception raised: \n{e}')  # will write exception and stack in log on new line
         raise e  # raise exception to stop program
