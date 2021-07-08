@@ -88,6 +88,21 @@ def openFirefox(logger):
 
         logger.info(f'\nJob Title: {company_element.text.strip()}, \nLocation: {location_element.text.strip()}')
 
+    # write to csv
+
+    filename = 'python_jobs.csv'
+
+    # writing to csv file
+    with open(filename, 'w') as csvfile:
+        # creating a csv writer object
+        csvwriter = csv.writer(csvfile)
+
+        # writing the fields
+        #csvwriter.writerow('Job Title', 'Company Name')
+
+        # writing the data rows
+        csvwriter.writerows(job)
+
     logger.info(f'Closing firefox.')
     f_driver.quit()
 
