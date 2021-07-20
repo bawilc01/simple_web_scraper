@@ -1,46 +1,17 @@
-# Web Scraping Example
+Web Scraping Example
 
-This is an example web scraping project. It will scrape data from a given webpage and log
-it for analysis.
+This is an example web scraping project. What it is doing is going to newegg.com for laptops and recording names and prices of available laptops.
+The information gathered will be written to a file.
 
-Uses logging package that comes with python to log messages. Logger created in caller file and is reused for logging in other py files.
-Logging documentation: https://docs.python.org/3/howto/logging.html
-
-
-Requirements:
-
-Install python 3.9 or higher.
-Install pip for python: _python get-pip.py_ in the terminal.
-If pip is already installed, check that pip is up to date with:  _pip install --upgrade pip_
-
-Check your browser version and then go to these sites to download the webdriver
-for your browser version. Download the executable for your machine and update the binary path for each 
-browser. I am on Chrome version 91, for example, so I need the chromedriver exe
-that works for Chrome version 91:
-
-Firefox: https://github.com/mozilla/geckodriver/releases
-
-Chrome: https://chromedriver.chromium.org/downloads
-
-Follow this youtube video to set your binary path for the WebDriver. This is for the Chrome chromedriver but 
-the same thing can be done for the Firefox geckodriver:
-https://www.youtube.com/watch?v=qeddFX5HXis
-
-Webscraping with Beautiful Soup:
-
-https://realpython.com/beautiful-soup-web-scraper-python/
-https://www.geeksforgeeks.org/implementing-web-scraping-python-beautiful-soup/
-
-
-Will also need to run 
-_pip install -r requirements.txt_ in the terminal to install the packages used in the project. 
 
 To run:
 
-In IDE: 
-Run caller.py file and watch console and browsers open and do their thing.
-
-In terminal/cmd:
-CD into the folder where caller file/webscraper file is at. 
-Run command python3 caller.py and watch logs written to terminal and browsers open.
-
+Install python on machine. I am running python 3.8.
+Install pip for python. Run this on the command line: python get-pip.py
+If pip is already installed, check that pip is up to date with:  pip install --upgrade pip
+Run "pip install web-driver manager" in cmd in order to use the ChromeDriverManager
+Will also need to install on cmd for this project:
+pip install selenium (for Selenium Webdriver package)
+pip install bs4 (for BeautifulSoup pacakge)
+pip install pandas (for pandas package)
+pip install pipenv (to run in virtual environment)
